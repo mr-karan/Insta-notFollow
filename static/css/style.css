@@ -231,7 +231,7 @@ img {
 
 .img-responsive {
   display: block;
-  max-width: 100%;
+  max-width: 150px;
   height: auto; }
 
 .img-rounded {
@@ -246,7 +246,7 @@ img {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   display: inline-block;
-  max-width: 100%;
+  max-width: 150px;
   height: auto; }
 
 .img-circle {

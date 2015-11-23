@@ -40,10 +40,10 @@ def get_unique(user_id):
 	#return result
 	resultattr = {}
 	for i in result:
-		resultattr[i.full_name]=i.profile_picture
+		resultattr[i.username]=i.profile_picture
 
 	#print(resultattr)
 	return resultattr
 
 
-get_unique('1413598181')
+#get_unique('1413598181')
