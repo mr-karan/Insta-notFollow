@@ -4,10 +4,14 @@
 {% block body %}
 <div class="container">
     <div class="panel panel-default">
-        <div class="panel-heading">
-            <h2>!Follow Back </h2>
-      
-        </div>
+      <div class="row">
+    <div class="col-lg-6 col-xs-6"><h2>!Follow Back</h2></div>
+    <div class="col-lg-6 col-xs-6">
+      <div class="col-lg-2 col-lg-push-10 col-md-2 col-md-push-0 col-sm-2 col-sm-push-0 col-xs-2 col-xs-push-0">
+        <div class="pull-right"><h4> <a href="https://instagram.com/accounts/logout/">Logout</a></h4></div>
+      </div>
+    </div>
+</div>
         <div class="panel-body">
             <div class="row show-list">
             {% for username, profile_picture in result.items() %}
