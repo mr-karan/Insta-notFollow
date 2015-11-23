@@ -9,7 +9,7 @@ app.secret_key = os.environ.get('FLASK_SECRET_KEY')
 instaConfig = {
     'client_id':os.environ.get('INSTA_CLIENT_ID'),
     'client_secret':os.environ.get('INSTA_CLIENT_SECRET'),
-    'redirect_uri' : 'http://insta-notfollow.herokuapp.com/'
+    'redirect_uri' : 'http://insta-notfollow.herokuapp.com/instagram_callback'
 }
 api = InstagramAPI(**instaConfig)
 '''
