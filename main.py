@@ -3,13 +3,13 @@ from instagram.client import InstagramAPI
 from flask import Flask, request, render_template, session, redirect, abort, flash, jsonify
 import os
 app = Flask(__name__)
-app.secret_key = os.environ.get('FLASK_SECRET_KEY')
+app.secret_key = os.environ['FLASK_SECRET_KEY']
 
 # configure Instagram API
 instaConfig = {
-    'client_id':os.environ.get('INSTA_CLIENT_ID'),
-    'client_secret':os.environ.get('INSTA_CLIENT_SECRET'),
-    'redirect_uri' : 'http://insta-notfollow.herokuapp.com/instagram_callback'
+    'client_id':os.environ['INSTA_CLIENT_ID'],
+    'client_secret':os.environ['INSTA_CLIENT_SECRET'),
+    'redirect_uri' : os.environ['INSTA_REDIRECT_URI']
 }
 api = InstagramAPI(**instaConfig)
 '''
