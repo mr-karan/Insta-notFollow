@@ -1,0 +1,14 @@
+{
+  "name": "insta-notfollow",
+  "description": "Find who doesn't follow you back on Instagram",
+  "repository": "https://github.com/mr-karan/Insta-notFollow",
+  "keywords": ["python", "instagram", "python-instagram"],
+  "env": {
+    "INSTA_ACCESS_TOKEN": {
+      "required": true
+    },
+    "INSTA_CLIENT_ID": {
+      "required": true
+    }
+  }
+}
