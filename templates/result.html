@@ -1,0 +1,33 @@
+
+{% extends "base.html" %}
+
+{% block body %}
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2>Instagram !Follow </h2>
+      
+        </div>
+        <div class="panel-body">
+            <div class="row show-list">
+            {% for name, profile_picture in result.items() %}
+                <div class="fade-repeat col-xs-4 col-md-3">
+                 
+                    
+                        <img class="img-rounded" src="{{profile_picture}}" width="100%"/>
+                    
+                    <div class="text-center">
+                        <h4>{{name}}</h4>
+                        
+                    </div>
+                     
+                </div>
+                 {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+ {% endblock %}

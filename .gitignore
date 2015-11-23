@@ -4,6 +4,9 @@ __pycache__/
 
 # C extensions
 *.so
+secret.txt
+
+*.ipynb
 
 # Distribution / packaging
 .Python
@@ -15,6 +18,7 @@ downloads/
 eggs/
 .eggs/
 lib/
+.ipynb_checkpoints/
 lib64/
 parts/
 sdist/
