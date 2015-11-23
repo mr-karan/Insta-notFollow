@@ -1,2 +1,3 @@
 Flask == 0.10.1
 Requests == 2.8.1
+gunicorn==19.3.0
