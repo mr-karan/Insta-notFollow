@@ -8,7 +8,7 @@ app.secret_key = os.environ['FLASK_SECRET_KEY']
 # configure Instagram API
 instaConfig = {
     'client_id':os.environ['INSTA_CLIENT_ID'],
-    'client_secret':os.environ['INSTA_CLIENT_SECRET'),
+    'client_secret':os.environ['INSTA_CLIENT_SECRET'],
     'redirect_uri' : os.environ['INSTA_REDIRECT_URI']
 }
 api = InstagramAPI(**instaConfig)
