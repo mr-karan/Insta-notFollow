@@ -5,4 +5,4 @@ client_id = os.environ['INSTA_CLIENT_ID']
 base_url='https://api.instagram.com/v1'
 client_secret=os.environ['INSTA_CLIENT_SECRET']
 secret_key=os.environ['FLASK_SECRET_KEY']
-REDIRECT_URI='http://localhost:5000/instagram_callback'
+REDIRECT_URI='http://insta-notfollow.herokuapp.com/instagram_callback'
