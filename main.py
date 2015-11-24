@@ -1,8 +1,13 @@
 import requests
 from instagram.client import InstagramAPI
 from flask import Flask, request, render_template, session, redirect, abort, flash, jsonify
-import os
+import sys
+import logging
 app = Flask(__name__)
+
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
+
 app.secret_key = os.environ['FLASK_SECRET_KEY']
 
 # configure Instagram API
