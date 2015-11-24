@@ -3,6 +3,7 @@ from instagram.client import InstagramAPI
 from flask import Flask, request, render_template, session, redirect, abort, flash, jsonify
 import sys
 import logging
+import os
 app = Flask(__name__)
 
 app.logger.addHandler(logging.StreamHandler(sys.stdout))
@@ -100,6 +101,8 @@ def instagram_callback():
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template('404.html'), 404
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
